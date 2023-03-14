@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  // base: ".",
+  base: "/",
   title: "My Awesome Project",
   cleanUrls: true,
   description: "A VitePress Site",
