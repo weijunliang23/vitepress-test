@@ -2,27 +2,31 @@ import { defineConfig } from "vitepress"
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: ".",
+  // base: ".",
   title: "My Awesome Project",
+  cleanUrls: true,
   description: "A VitePress Site",
   srcDir: "src",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" }
+      { text: "Examples", link: "/markdown-examples" },
+      { text: "Uniapp", link: "/uniapp/index" }
     ],
 
-    sidebar: [
-      {
-        text: "Examples",
-        items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" }
-        ]
-      }
-    ],
+    sidebar: {
+      "/uniapp/": [
+        {
+          text: "uniapp",
+          items: [
+            { text: "Uniapp介绍", link: "/uniapp/description" },
+            { text: "Uniapp兼容坑点", link: "/uniapp/compatibility" }
+          ]
+        }
+      ]
+    },
 
-    socialLinks: [{ icon: "github", link: "https://github.com/vuejs/vitepress" }]
+    socialLinks: [{ icon: "github", link: "https://github.com/weijunliang23/wjl.github.io" }]
   }
 })
