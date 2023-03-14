@@ -19,6 +19,7 @@ export default defineConfig({
       "/uniapp/": [
         {
           text: "uniapp",
+          collapsed: false,
           items: [
             { text: "Uniapp介绍", link: "/uniapp/description" },
             { text: "Uniapp兼容坑点", link: "/uniapp/compatibility" }
