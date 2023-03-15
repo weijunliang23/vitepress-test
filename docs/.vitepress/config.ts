@@ -1,33 +1,20 @@
 import { defineConfig } from "vitepress"
-
-// https://vitepress.dev/reference/site-config
+import { navSource, sidebarSource } from "./configs/themeConfig"
 export default defineConfig({
   base: "/",
-  title: "My Awesome Project",
+  title: "魏大仙的前端文档站点",
   cleanUrls: true,
-  description: "A VitePress Site",
+  description: "这是一个用vitepress开发的前端文档,包含一些坑点",
   srcDir: "src",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
-      { text: "Uniapp", link: "/uniapp/index" }
-    ],
+    nav: navSource,
 
-    sidebar: {
-      "/uniapp/": [
-        {
-          text: "uniapp",
-          collapsed: false,
-          items: [
-            { text: "Uniapp介绍", link: "/uniapp/description" },
-            { text: "Uniapp兼容坑点", link: "/uniapp/compatibility" }
-          ]
-        }
-      ]
-    },
+    sidebar: sidebarSource,
 
-    socialLinks: [{ icon: "github", link: "https://github.com/weijunliang23/wjl.github.io" }]
+    socialLinks: [{ icon: "github", link: "https://github.com/weijunliang23/wjl.github.io" }],
+    footer: {
+      message: "Released under the MIT License.",
+      copyright: "Copyright © 2023-present 君粮"
+    }
   }
 })
