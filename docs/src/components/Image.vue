@@ -6,12 +6,12 @@ const props =  defineProps({
     required: true
   },
   width: {
-    type: Number,
-    default: 100
+    type: String,
+    default: "100px"
   },
   height: {
-    type: Number,
-    default: 100
+    type: String,
+    default: "100px"
   },
   style: {
     type: Object as PropType<CSSProperties>,
@@ -26,8 +26,8 @@ const props =  defineProps({
 const styleProp = computed(()=>{
   if(props.style === null){
       return {
-        width: props.width + 'px',
-        height: props.height + 'px'
+        width: props.width,
+        height: props.height
       }
   }
   return props.style
@@ -35,9 +35,11 @@ const styleProp = computed(()=>{
 </script>
 
 <template>
-  <img src="/assets/image/profile.jpg" :alt="alt" :style="styleProp">
+  <img class="img--com" :src="src" :alt="alt" :style="styleProp">
 </template>
 
-<style scoped lang='scss'>
-
+<style>
+  .img--com {
+    max-width: 100% !important;
+  }
 </style>

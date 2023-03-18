@@ -9,7 +9,7 @@ hero:
   image:
     src: /assets/image/profile.jpg
     alt: 魏大仙的头像
-  actions:
+  actions:  
     - theme: brand
       text: 前端重点笔记
       link: /note/about
