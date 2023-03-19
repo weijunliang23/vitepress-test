@@ -21,11 +21,11 @@ hero:
       link: /chat/chat
 
 features:
-  - title: 你能看到
-    details: 一个初级前端在职场是有多么的不容易，现在的IT简直就是修罗场
+  - title: 我想吐槽
+    details: 初级前端在职场是有多么的不容易，现在的IT简直就是修罗场 -_- 
   - title: 你能看到
     details: 工作几年遇见的常见的代码问题和兼容问题，这也是唯一正经的模块
-  - title: 你能看到
+  - title: 也能看到
     details: 我所想到的学习路线和吹几句自己的想法，也许也可以分享下自己的面经
 ---
 

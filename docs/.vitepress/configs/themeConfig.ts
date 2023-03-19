@@ -26,6 +26,6 @@ export const sidebarSource = {
 
 export const navSource = [
   { text: "首页", link: "/" },
-  { text: "前端笔记", link: "/note/note" },
+  { text: "前端笔记", link: "/note/base" },
   { text: "Uniapp", link: "/uniapp/index" }
 ]

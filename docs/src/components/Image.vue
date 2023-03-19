@@ -24,8 +24,8 @@ const props =  defineProps({
 })
 
 // const srcList = {
-//   'surprise' : '/assets/image/surprise.webp',
-//   'renderHtml' : '/assets/image/renderHtml.jpg',
+//   'surprise' : '/assets/image/surprise.webp', html惊讶
+//   'renderHtml' : '/assets/image/renderHtml.jpg', 渲染流程
 // }
 const styleProp = computed(()=>{
   if(props.style === null){
@@ -42,6 +42,7 @@ const styleProp = computed(()=>{
 <template>
   <img v-if="srcType === 'surprise'" class="img--com" src="/assets/image/surprise.webp" :alt="alt" :style="styleProp">
   <img v-if="srcType === 'renderHtml'" class="img--com" src="/assets/image/renderHtml.jpg" :alt="alt" :style="styleProp">
+  <img v-if="srcType === 'totalStyle'" class="img--com" src="/assets/image/total-style.jpg" :alt="alt" :style="styleProp">
 </template>
 
 <style>
