@@ -1,7 +1,7 @@
 <script setup lang='ts'>
 import {computed, type PropType,type CSSProperties} from 'vue'
 const props =  defineProps({
-  src: {
+  srcType: {
     type: String,
     required: true
   },
@@ -23,6 +23,10 @@ const props =  defineProps({
   }
 })
 
+// const srcList = {
+//   'surprise' : '/assets/image/surprise.webp',
+//   'renderHtml' : '/assets/image/renderHtml.jpg',
+// }
 const styleProp = computed(()=>{
   if(props.style === null){
       return {
@@ -32,10 +36,12 @@ const styleProp = computed(()=>{
   }
   return props.style
 })
+
 </script>
 
 <template>
-  <img class="img--com" :src="src" :alt="alt" :style="styleProp">
+  <img v-if="srcType === 'surprise'" class="img--com" src="/assets/image/surprise.webp" :alt="alt" :style="styleProp">
+  <img v-if="srcType === 'renderHtml'" class="img--com" src="/assets/image/renderHtml.jpg" :alt="alt" :style="styleProp">
 </template>
 
 <style>

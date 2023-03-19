@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./app.c693e35b.js";import"./chunks/theme.4a44a463.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"note/css-advanced.md"}'),s={name:"note/css-advanced.md"};function c(n,o,r,d,p,_){return t(),a("div")}const l=e(s,[["render",c]]);export{f as __pageData,l as default};

@@ -3,7 +3,7 @@
 我对html的了解还停留在这只是一个超文本标记语言，没有太大的意义。在面试的时候也只是因为面试的时候看了下语义化标签，新增的h5标签例如canvas，video等等。
 
 事情的转机是我加入某个技术交流群的人里面，有人提问div是不是块级元素。
-<Image src="/assets/image/surprise.webp"/>
+<Image srcType="surprise"/>
 这是什么吊问题，我在几百年前还在花果山的时候就知道div，p等等都是块级元素啊，但后来他告诉根本没有所谓的块级元素和行内元素，早在很多年前谷歌浏览器就已经是通过浏览器人为的给予div css样式才变成了所谓的块级元素，正确名称应为块盒，同理行内元素也是通过浏览器赋值为行盒。
 
 ```css
@@ -21,4 +21,4 @@ div {                                           user agent stylesheet
 
 在开始讲之前
 
-<Image src="/assets/image/renderHtml.jpg" width="100vw" height="300px"/>
+<Image srcType="renderHtml" width="100vw" height="300px"/>

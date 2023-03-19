@@ -6,9 +6,9 @@ hero:
   name: "前端文档/个人笔记"
   text: "A frontend Site"
   tagline: 创建此站点的初衷是希望自己永远保持一颗学习的 ♥
-  image:
-    src: /assets/image/profile.jpg
-    alt: 魏大仙的头像
+  # image:
+  #   src: /assets/image/profile.jpg
+  #   alt: 魏大仙的头像
   actions:  
     - theme: brand
       text: 前端重点笔记
