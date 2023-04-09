@@ -31,3 +31,4 @@ ISNULL(height,0),如果height为null则为0；
 DISTINCT 简单去重很鸡肋
 
 #### 过滤数据 WHERE
+<=> 安全等于，用于参与有null的比较运算
