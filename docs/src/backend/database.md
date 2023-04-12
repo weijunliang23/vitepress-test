@@ -32,3 +32,19 @@ DISTINCT 简单去重很鸡肋
 
 #### 过滤数据 WHERE
 <=> 安全等于，用于参与有null的比较运算
+least,greatest最小限度和最大限度
+between ... and 区间
+AND => && OR => ||
+%LIKE%模糊查询 %多，_一个
+Order_by filed DESC降序,filed ASC升序
+LIMIT pageOFFSet pagesize 8.0: pagesize offset pageOFFset
+多表查询须每个返回字段指定表，表取别名效率快，连接条件需注意
+```sql
+
+SELECT e.employee_id,e.last_name,d.department_name,l.city
+FROM employees as e,departments as d,locations as l
+WHERE e.department_id = d.department_id && d.location_id = l.location_id
+ORDER BY e.employee_id DESC
+-- LIMIT 5 OFFSET 0
+LIMIT 0,5
+```
