@@ -48,3 +48,11 @@ ORDER BY e.employee_id DESC
 -- LIMIT 5 OFFSET 0
 LIMIT 0,5
 ```
+
+### 七种连接方式，外连接，内连接，满连接
+<Image srcType="sql-connect" width="100vw" height="400px"/>
+
+```sql
+语法为 FROM LEFT JOIN table a table b  ON key = key
+连接 union / union all 优先使用 union all
+```

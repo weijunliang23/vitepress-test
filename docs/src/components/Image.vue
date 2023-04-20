@@ -44,6 +44,8 @@ const styleProp = computed(()=>{
   <img v-if="srcType === 'renderHtml'" class="img--com" src="/assets/image/renderHtml.jpg" :alt="alt" :style="styleProp">
   <img v-if="srcType === 'totalStyle'" class="img--com" src="/assets/image/total-style.jpg" :alt="alt" :style="styleProp">
   <img v-if="srcType === 'profileOverflow'" class="img--com" src="/assets/image/profile-overflow.jpg" :alt="alt" :style="styleProp">
+  <img v-if="srcType === 'sql-connect'" class="img--com" src="/assets/image/sql-connect.jpg" :alt="alt" :style="styleProp">
+
 </template>
 
 <style>
